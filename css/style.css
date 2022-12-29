@@ -6,6 +6,7 @@
 
 body {
     height: 300vh;
+    color: white;
 }
 
 .container1 {
@@ -27,9 +28,63 @@ body {
 }
 
 nav.navbar {
-
+    overflow: auto;
     position: fixed;
     width: 100vw;
     height: 7vh;
     background-color: transparent;
 }
+
+.container1 .navbar img {
+    float: left;
+    background: url(/img/model3_01.jpg) center center/cover;
+    width: 100px;
+    height: 40px;
+}
+
+ul.middle {
+    border: none none none none;
+    display: block;
+    color: white;
+    list-style: none;
+    float: right;
+}
+
+    .navbar {
+    background: #333;
+    color: #fff;
+    overflow: auto;
+  }
+  
+  .navbar a {
+    margin-right: 20px;
+    padding: 10px 10px;
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .navbar h1 {
+    float: left;
+    padding-top: 20px;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    float: right;
+  }
+  
+  .navbar ul li {
+    float: left;
+  }
+  
+  .navbar ul li a {
+    display: block;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .navbar ul li a:hover, 
+  .navbar ul li a.current {
+    background: #444;
+    color: #f7c08a;
+  }
