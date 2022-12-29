@@ -4,12 +4,17 @@
     box-sizing: border-box;
 }
 
+.clr {
+    clear: both;
+}
+
 body {
     height: 300vh;
     color: white;
 }
 
 .container1 {
+    position: relative;
     width: 100vw;
     height: 100vh;
     background: url(/img/model3_01.jpg) center center/cover;
@@ -33,6 +38,25 @@ nav.navbar {
     width: 100vw;
     height: 7vh;
     background-color: transparent;
+}
+
+.container1 .title {
+    position:absolute;
+    text-align: center;
+    width: 300px;
+    height: 100px;
+    margin: 0 auto;
+    top: 20vh;
+    left: 40%;
+
+}
+
+.container1 .title a {
+    color: white;
+}
+
+.container1 .title h1 {
+    font-size: 50px;
 }
 
 .container1 .navbar img {
@@ -79,7 +103,7 @@ ul.middle {
     float: left;
   }
   
-  .navbar ul li a {
+  .navbar ul li a, .container1 .title a {
     display: block;
     padding: 20px;
     text-align: center;
