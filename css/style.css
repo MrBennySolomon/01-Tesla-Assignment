@@ -94,7 +94,7 @@ ul.middle {
     padding-top: 20px;
   }
   
-  .navbar ul {
+  .navbar ul, .first ul, .second ul, .third ul {
     list-style: none;
     float: right;
   }
@@ -114,3 +114,50 @@ ul.middle {
     background: #444;
     color: #f7c08a;
   }
+
+  button.message {
+    border-radius: 50%;
+    right: 20px;
+    bottom: 50px;
+    position: fixed;
+    width: 70px;
+    height: 70px;
+  }
+  .footer1 {
+    width: 60vw;
+    height: 7vh;
+    background-color: transparent;
+    position: absolute;
+    bottom: 4vh;
+    left: 25vw;
+  }
+  .first {
+    margin-right: 40px;
+    float: left;
+  }
+  .second {
+    margin-right: 40px;
+    float: left;
+  }
+  .third {
+    margin-right: 100px;
+    float: left;
+  }
+
+  .footer1 button {
+    font-size: larger;
+    color: white;
+    margin-left: 70px;
+    background-color: transparent;
+    border: 4px solid white;
+    padding: 10px 50px;
+    float: left;
+  }
+
+  .big {
+    font-size: xx-large;
+    font-weight: bold;
+  }
+
+  
+
