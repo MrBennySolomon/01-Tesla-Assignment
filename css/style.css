@@ -9,6 +9,7 @@
 }
 
 body {
+    font-family: Arial, Helvetica, sans-serif;
     height: 300vh;
     color: white;
 }
@@ -21,14 +22,16 @@ body {
 }
 
 .container2 {
+    position: relative;
     width: 100vw;
     height: 100vh;
     background: url(/img/model3_02.jpg) center center/cover;
 }
 
 .container3 {
+    position: relative;
     width: 100vw;
-    height: 100vh;
+    height: 70vh;
     background: url(/img/model3_03.jpg) center center/cover;
 }
 
@@ -122,6 +125,9 @@ ul.middle {
     position: fixed;
     width: 70px;
     height: 70px;
+    border: 3px solid black;
+    background-color: white;
+    z-index: 10;
   }
   .footer1 {
     width: 60vw;
@@ -168,6 +174,72 @@ ul.middle {
     font-weight: bold;
     list-style: none;
   }
+  .main {
+    font-weight: bold;
+    width: 300px;
+    height: 400px;
+    color: black;
+    position: absolute;
+    top: 20px;
+    right: 30px;
 
-  
+  }
+  .footer2 {
+    color: black;
+    width: 30vw;
+    height: 5vh;
+    background-color: transparent;
+    position: absolute;
+    bottom: 4vh;
+    right: 10vw;
+  }
 
+  .footer2 .btn2 {
+    font-size: larger;
+    color: black;
+    margin-left: 70px;
+    background-color: transparent;
+    border: 4px solid black;
+    padding: 10px 50px;
+    float: right;
+  }
+  .footer2 .btn1 {
+    font-size: larger;
+    color: black;
+    margin-left: 70px;
+    background-color: transparent;
+    border: 4px solid black;
+    padding: 15px 15px;
+    float: left;
+  }
+
+  .btn1 {
+
+    font-weight: bold;
+    border-radius: 50%;
+  }
+  .btn1 a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .main3 {
+    width: 60vw;
+    height: 7vh;
+    background-color: #333;
+    position: absolute;
+    bottom: 4vh;
+    left: 25vw;
+  }
+  .main3 .first {
+    margin-right: 40px;
+    float: left;
+  }
+  .main3 .second {
+    margin-right: 40px;
+    float: left;
+  }
+  .main3 .third {
+    margin-right: 100px;
+    float: left;
+  }
