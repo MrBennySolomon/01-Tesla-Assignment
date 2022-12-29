@@ -36,9 +36,11 @@ nav.navbar {
 }
 
 .container1 .navbar img {
+    margin-left: 20px;
+    margin-top: 10px;
     float: left;
-    background: url(/img/model3_01.jpg) center center/cover;
-    width: 100px;
+    background: url(/img/tesla_logo.svg) center center/cover;
+    width: 300px;
     height: 40px;
 }
 
@@ -57,7 +59,7 @@ ul.middle {
   }
   
   .navbar a {
-    margin-right: 20px;
+    margin-right: 10px;
     padding: 10px 10px;
     text-decoration: none;
     color: #fff;
