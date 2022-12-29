@@ -25,3 +25,9 @@ body {
     height: 100vh;
     background: url(/img/model3_03.jpg) center center/cover;
 }
+
+nav.navbar {
+    width: 100vw;
+    height: 7vh;
+    background-color: #333;
+}
