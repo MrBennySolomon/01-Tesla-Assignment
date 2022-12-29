@@ -26,13 +26,15 @@ body {
     width: 100vw;
     height: 100vh;
     background: url(/img/model3_02.jpg) center center/cover;
+    
 }
 
 .container3 {
     position: relative;
     width: 100vw;
-    height: 70vh;
+    height: 100vh;
     background: url(/img/model3_03.jpg) center center/cover;
+    
 }
 
 nav.navbar {
@@ -223,23 +225,61 @@ ul.middle {
     color: black;
   }
 
-  .main3 {
-    width: 60vw;
-    height: 7vh;
-    background-color: #333;
+  .container3 .main3 {
     position: absolute;
-    bottom: 4vh;
+    width: 80vw;
+    height: 25vh;
+    background-color: transparent;
+    z-index: 3;
+    
+    bottom: 7vh;
     left: 25vw;
   }
-  .main3 .first {
+  .container3 .main3 .first {
     margin-right: 40px;
     float: left;
   }
-  .main3 .second {
+  .container3 .main3 .second {
     margin-right: 40px;
     float: left;
   }
-  .main3 .third {
+  .container3 .main3 .third {
     margin-right: 100px;
     float: left;
+  }
+
+  .footer3 {
+    color: black;
+    width: 100vw;
+    height: 20vh;
+    background-color: transparent;
+    position: absolute;
+    bottom: 10px;
+    left: 10vw;
+  }
+
+  .footer3 .btn2 {
+    font-size: larger;
+    color: black;
+    margin-left: 70px;
+    background-color: transparent;
+    border: 4px solid black;
+    padding: 10px 50px;
+    float: right;
+  }
+  .footer3 .btn1 {
+    font-size: larger;
+    color: black;
+    margin-left: 70px;
+    background-color: transparent;
+    border: 4px solid black;
+    padding: 15px 15px;
+    float: left;
+  }
+  .left {
+    float: left;
+  }
+
+  .right {
+    float: right;
   }
