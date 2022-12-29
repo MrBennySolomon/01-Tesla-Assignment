@@ -158,6 +158,16 @@ ul.middle {
     font-size: xx-large;
     font-weight: bold;
   }
+  .side-navbar {
+    position: absolute;
+    top: 40vh;
+    left: 1vw;
+  }
+
+  .side-navbar ul {
+    font-weight: bold;
+    list-style: none;
+  }
 
   
 
