@@ -135,12 +135,13 @@ button.message {
   right: 20px;
   bottom: 50px;
   position: fixed;
-  width: 70px;
-  height: 70px;
+  width: 50px;
+  height: 50px;
   border: 3px solid black;
   background-color: white;
   z-index: 10;
 }
+
 .footer1 {
   width: 60vw;
   height: 7vh;
@@ -350,18 +351,28 @@ button.message {
 .info {
   position: relative;
 }
+
+
+@keyframes example {
+  from {height: 0px; background-color: white;}
+  to {height: 200px; background-color: black;}
+}
+
 .info .up {
   position: absolute;
   width: 2px;
   height: 200px;
   background-color: #333;
   left: 50%;
-  top: 5vh;
+  top: 4vh;
   border-left:black;
   border-width: 3px;
   color: black;
   text-decoration: none;
   padding-left: 10px;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
 }
 .info .left {
   position: absolute;
@@ -369,12 +380,15 @@ button.message {
   height: 200px;
   background-color: #333;
   left: 20%;
-  top: 25vh;
+  top: 40vh;
   border-left:black;
   border-width: 3px;
   color: black;
   text-decoration: none;
   padding-left: 10px;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
 }
 .info .bottom {
   position: absolute;
@@ -382,13 +396,16 @@ button.message {
   height: 200px;
   background-color: #333;
   left: 50%;
-  top: 75vh;
+  top: 70vh;
   border-left:black;
   border-width: 3px;
   color: black;
   text-decoration: none;
   padding-left: 10px;
-  padding-top: 120px;
+  /* padding-top: 120px; */
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
 }
 .info li{
   list-style: none;
