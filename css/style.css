@@ -179,12 +179,15 @@ button.message {
 .side-navbar {
   position: absolute;
   top: 40vh;
-  left: 1vw;
+  left: 5vw;
 }
 
 .side-navbar ul {
   
   list-style: none;
+}
+.side-navbar ul li {
+  font-size: 20px;
 }
 .side-navbar ul a.model-3 {
   color: transparent;
@@ -226,7 +229,7 @@ button.message {
 .footer2 {
   color: black;
   width: 30vw;
-  height: 5vh;
+  height: 8vh;
   background-color: transparent;
   position: absolute;
   bottom: 4vh;
@@ -254,7 +257,7 @@ button.message {
 
 .footer2 a {
   font-weight: bold;
-  margin: 40px 40px;
+  margin-left: 40px;
   color: black;
   text-decoration: none;
 }
@@ -326,10 +329,14 @@ button.message {
 }
 .left {
   float: left;
+  padding-top: 40px;
+  padding-left: 100px;
 }
 
 .right {
   float: right;
+  padding-right: 100px;
+  padding-top: 40px;
 }
 
 .footer3 .left a {
@@ -345,7 +352,7 @@ button.message {
 }
 .info .up {
   position: absolute;
-  width: 3px;
+  width: 2px;
   height: 200px;
   background-color: #333;
   left: 50%;
@@ -358,7 +365,7 @@ button.message {
 }
 .info .left {
   position: absolute;
-  width: 3px;
+  width: 2px;
   height: 200px;
   background-color: #333;
   left: 20%;
@@ -371,7 +378,7 @@ button.message {
 }
 .info .bottom {
   position: absolute;
-  width: 3px;
+  width: 2px;
   height: 200px;
   background-color: #333;
   left: 50%;
