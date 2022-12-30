@@ -67,14 +67,18 @@ nav.navbar {
     font-size: 50px;
 }
 
-.container1 .navbar img {
+svg {
+  margin: 20px;
+}
+
+/* .container1 .navbar img {
     margin-left: 20px;
     margin-top: 10px;
     float: left;
     background: url(/img/tesla_logo.svg) center center/cover;
     width: 300px;
     height: 40px;
-}
+} */
 
 ul.middle {
     border: none none none none;
