@@ -1,292 +1,319 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .clr {
-    clear: both;
+  clear: both;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    height: 300vh;
-    color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 300vh;
+  color: white;
 }
 
 a, button {
-    cursor: pointer;
+  cursor: pointer;
 }
 .container1 {
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    background: url(/img/model3_01.jpg) center center/cover;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: url(/img/model3_01.jpg) center center/cover;
 }
 
 .container2 {
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    background: url(/img/model3_02.jpg) center center/cover;
-    
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: url(/img/model3_02.jpg) center center/cover;
+  
 }
 
 .container3 {
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    background: url(/img/model3_03.jpg) center center/cover;
-    
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: url(/img/model3_03.jpg) center center/cover;
+  
 }
 
 nav.navbar {
-    overflow: auto;
-    position: fixed;
-    width: 100vw;
-    height: 7vh;
-    background-color: transparent;
+  overflow: auto;
+  position: fixed;
+  width: 100vw;
+  height: 7vh;
+  background-color: transparent;
 }
 
 .container1 .title {
-    position:absolute;
-    text-align: center;
-    width: 300px;
-    height: 100px;
-    margin: 0 auto;
-    top: 20vh;
-    left: 40%;
+  position:absolute;
+  text-align: center;
+  width: 300px;
+  height: 100px;
+  margin: 0 auto;
+  top: 20vh;
+  left: 40%;
 
 }
 
 .container1 .title a {
-    color: white;
+  color: white;
 }
 
 .container1 .title h1 {
-    font-size: 50px;
+  font-size: 50px;
 }
 
 svg {
-  margin: 20px;
+margin: 20px;
 }
 
 /* .container1 .navbar img {
-    margin-left: 20px;
-    margin-top: 10px;
-    float: left;
-    background: url(/img/tesla_logo.svg) center center/cover;
-    width: 300px;
-    height: 40px;
+  margin-left: 20px;
+  margin-top: 10px;
+  float: left;
+  background: url(/img/tesla_logo.svg) center center/cover;
+  width: 300px;
+  height: 40px;
 } */
 
 ul.middle {
-    border: none none none none;
-    display: block;
-    color: white;
-    list-style: none;
-    float: right;
+  border: none none none none;
+  display: block;
+  color: white;
+  list-style: none;
+  float: right;
 }
 
-    .navbar {
-    background: #333;
-    color: #fff;
-    overflow: auto;
-  }
+  .navbar {
+  background: #333;
+  color: #fff;
+  overflow: auto;
+}
+
+.navbar a {
+  margin-right: 10px;
+  padding: 10px 10px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.navbar h1 {
+  float: left;
+  padding-top: 20px;
+}
+
+.navbar ul, .first ul, .second ul, .third ul {
+  list-style: none;
+  float: right;
+}
+
+.navbar ul li {
+  float: left;
+}
+
+.navbar ul li a, .container1 .title a {
+  display: block;
+  padding: 20px;
+  text-align: center;
+}
+
+.navbar ul li a:hover, 
+.navbar ul li a.current {
+  background: #444;
+  color: #f7c08a;
+}
+
+button.message {
+  border-radius: 50%;
+  right: 20px;
+  bottom: 50px;
+  position: fixed;
+  width: 70px;
+  height: 70px;
+  border: 3px solid black;
+  background-color: white;
+  z-index: 10;
+}
+.footer1 {
+  width: 60vw;
+  height: 7vh;
+  background-color: transparent;
+  position: absolute;
+  bottom: 4vh;
+  left: 25vw;
+}
+.first {
+  margin-right: 40px;
+  float: left;
+}
+.second {
+  margin-right: 40px;
+  float: left;
+}
+.third {
+  margin-right: 100px;
+  float: left;
+}
+
+.footer1 button {
+  font-size: larger;
+  color: white;
+  margin-left: 70px;
+  background-color: transparent;
+  border: 4px solid white;
+  padding: 10px 50px;
+  float: left;
+}
+
+.big {
+  font-size: xx-large;
+  font-weight: bold;
+}
+.side-navbar {
+  position: absolute;
+  top: 40vh;
+  left: 1vw;
+}
+
+.side-navbar ul {
   
-  .navbar a {
-    margin-right: 10px;
-    padding: 10px 10px;
-    text-decoration: none;
-    color: #fff;
-  }
+  list-style: none;
+}
+.side-navbar ul a.model-3 {
+  color: transparent;
+  text-decoration: none;
+}
+.side-navbar ul a.safety {
+  color: transparent;
+  text-decoration: none;
+}
+.side-navbar ul a.performance {
+  color: transparent;
+  text-decoration: none;
+}
+
+.side-navbar ul a.model-3:hover {
+  color: white;
+  font-size: small;
   
-  .navbar h1 {
-    float: left;
-    padding-top: 20px;
-  }
+}
+.side-navbar ul a.safety:hover {
+  color: white;
+  font-size: small;
+}
+.side-navbar ul a.performance:hover {
+  color: white;
+  font-size: small;
+}
+
+.main {
+  font-weight: bold;
+  width: 300px;
+  height: 400px;
+  color: black;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+
+}
+.footer2 {
+  color: black;
+  width: 30vw;
+  height: 5vh;
+  background-color: transparent;
+  position: absolute;
+  bottom: 4vh;
+  right: 10vw;
+}
+
+.footer2 .btn2 {
+  font-size: larger;
+  color: black;
+  margin-left: 70px;
+  background-color: transparent;
+  border: 4px solid black;
+  padding: 10px 50px;
+  float: right;
+}
+.footer2 .btn1 {
+  font-size: larger;
+  color: black;
+  margin-left: 70px;
+  background-color: transparent;
+  border: 4px solid black;
+  padding: 15px 15px;
+  float: left;
+}
+
+.btn1 {
+
+  font-weight: bold;
+  border-radius: 50%;
+}
+.btn1 a {
+  text-decoration: none;
+  color: black;
+}
+
+.container3 .main3 {
+  position: absolute;
+  width: 80vw;
+  height: 25vh;
+  background-color: transparent;
+  z-index: 3;
   
-  .navbar ul, .first ul, .second ul, .third ul {
-    list-style: none;
-    float: right;
-  }
-  
-  .navbar ul li {
-    float: left;
-  }
-  
-  .navbar ul li a, .container1 .title a {
-    display: block;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .navbar ul li a:hover, 
-  .navbar ul li a.current {
-    background: #444;
-    color: #f7c08a;
-  }
+  bottom: 7vh;
+  left: 25vw;
+}
+.container3 .main3 .first {
+  margin-right: 40px;
+  float: left;
+}
+.container3 .main3 .second {
+  margin-right: 40px;
+  float: left;
+}
+.container3 .main3 .third {
+  margin-right: 100px;
+  float: left;
+}
 
-  button.message {
-    border-radius: 50%;
-    right: 20px;
-    bottom: 50px;
-    position: fixed;
-    width: 70px;
-    height: 70px;
-    border: 3px solid black;
-    background-color: white;
-    z-index: 10;
-  }
-  .footer1 {
-    width: 60vw;
-    height: 7vh;
-    background-color: transparent;
-    position: absolute;
-    bottom: 4vh;
-    left: 25vw;
-  }
-  .first {
-    margin-right: 40px;
-    float: left;
-  }
-  .second {
-    margin-right: 40px;
-    float: left;
-  }
-  .third {
-    margin-right: 100px;
-    float: left;
-  }
+.footer3 {
+  color: black;
+  width: 100vw;
+  height: 20vh;
+  background-color: transparent;
+  position: absolute;
+  bottom: 10px;
+  left: 10vw;
+}
 
-  .footer1 button {
-    font-size: larger;
-    color: white;
-    margin-left: 70px;
-    background-color: transparent;
-    border: 4px solid white;
-    padding: 10px 50px;
-    float: left;
-  }
+.footer3 .btn2 {
+  font-size: larger;
+  color: black;
+  margin-left: 70px;
+  background-color: transparent;
+  border: 4px solid black;
+  padding: 10px 50px;
+  float: right;
+}
+.footer3 .btn1 {
+  font-size: larger;
+  color: black;
+  margin-left: 70px;
+  background-color: transparent;
+  border: 4px solid black;
+  padding: 15px 15px;
+  float: left;
+}
+.left {
+  float: left;
+}
 
-  .big {
-    font-size: xx-large;
-    font-weight: bold;
-  }
-  .side-navbar {
-    position: absolute;
-    top: 40vh;
-    left: 1vw;
-  }
-
-  .side-navbar ul {
-    font-weight: bold;
-    list-style: none;
-  }
-  .main {
-    font-weight: bold;
-    width: 300px;
-    height: 400px;
-    color: black;
-    position: absolute;
-    top: 20px;
-    right: 30px;
-
-  }
-  .footer2 {
-    color: black;
-    width: 30vw;
-    height: 5vh;
-    background-color: transparent;
-    position: absolute;
-    bottom: 4vh;
-    right: 10vw;
-  }
-
-  .footer2 .btn2 {
-    font-size: larger;
-    color: black;
-    margin-left: 70px;
-    background-color: transparent;
-    border: 4px solid black;
-    padding: 10px 50px;
-    float: right;
-  }
-  .footer2 .btn1 {
-    font-size: larger;
-    color: black;
-    margin-left: 70px;
-    background-color: transparent;
-    border: 4px solid black;
-    padding: 15px 15px;
-    float: left;
-  }
-
-  .btn1 {
-
-    font-weight: bold;
-    border-radius: 50%;
-  }
-  .btn1 a {
-    text-decoration: none;
-    color: black;
-  }
-
-  .container3 .main3 {
-    position: absolute;
-    width: 80vw;
-    height: 25vh;
-    background-color: transparent;
-    z-index: 3;
-    
-    bottom: 7vh;
-    left: 25vw;
-  }
-  .container3 .main3 .first {
-    margin-right: 40px;
-    float: left;
-  }
-  .container3 .main3 .second {
-    margin-right: 40px;
-    float: left;
-  }
-  .container3 .main3 .third {
-    margin-right: 100px;
-    float: left;
-  }
-
-  .footer3 {
-    color: black;
-    width: 100vw;
-    height: 20vh;
-    background-color: transparent;
-    position: absolute;
-    bottom: 10px;
-    left: 10vw;
-  }
-
-  .footer3 .btn2 {
-    font-size: larger;
-    color: black;
-    margin-left: 70px;
-    background-color: transparent;
-    border: 4px solid black;
-    padding: 10px 50px;
-    float: right;
-  }
-  .footer3 .btn1 {
-    font-size: larger;
-    color: black;
-    margin-left: 70px;
-    background-color: transparent;
-    border: 4px solid black;
-    padding: 15px 15px;
-    float: left;
-  }
-  .left {
-    float: left;
-  }
-
-  .right {
-    float: right;
-  }
+.right {
+  float: right;
+}
