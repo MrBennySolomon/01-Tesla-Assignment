@@ -81,15 +81,6 @@ svg {
 margin: 20px;
 }
 
-/* .container1 .navbar img {
-  margin-left: 20px;
-  margin-top: 10px;
-  float: left;
-  background: url(/img/tesla_logo.svg) center center/cover;
-  width: 300px;
-  height: 40px;
-} */
-
 ul.middle {
   border: none none none none;
   display: block;
@@ -133,8 +124,8 @@ ul.middle {
 
 .navbar ul li a:hover, 
 .navbar ul li a.current {
-  background: #444;
-  color: #f7c08a;
+  background: rgb(110, 107, 107, 0.4);
+  color: white;
 }
 
 button.message {
