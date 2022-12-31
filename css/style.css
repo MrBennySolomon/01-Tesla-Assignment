@@ -637,3 +637,39 @@ button.message {
   font-size: 1.8rem;
 }
 
+.scroll {
+  align-items: center;
+  color: #fff;
+
+  font-family: Montserrat, serif;
+  position: fixed;
+  bottom: 0;
+  right: 50%;
+
+}
+
+.scroll .f-page{
+  color: rgb(238, 238, 238);
+}
+
+.scroll__icon {
+  font-size: 40px;
+  animation: down 2s infinite;
+  transform: translateY(-10px);
+}
+
+@keyframes down{
+
+  0%{
+      transform: translateY(-10px);
+  }
+
+  20%{
+      transform: translateY(0);
+  }
+}
+
+.scroll a {
+  text-decoration: none;
+  color: white;
+}
