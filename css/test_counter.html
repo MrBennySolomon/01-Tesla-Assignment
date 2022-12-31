@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   
+    <script src="https://kit.fontawesome.com/fa98044e1d.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes example-counter {
+            from {top: -400px;}
+            to {top: 0;}
+        }
+
+        .num-container {
+            position: relative;
+            background-color: transparent;
+            width:60px;
+            height: 30px;
+            top: 0;
+            overflow: hidden;
+            
+        }
+  
+        .num-container .num-left{
+            position: absolute;
+            width: 20px;
+            height: 400px;
+            background-color: transparent;
+            animation-name: example-counter;
+            animation-duration: 3s;
+            animation-iteration-count: 1;
+        }
+        .num-dot,
+        .num-container .seconds
+        {
+            position: absolute;
+            top: 0;
+            width: 10px;
+            height: 30px;
+            background-color: transparent;
+            left: 20px;
+            color: black;
+            font-size: 20px;
+            text-align: center;
+        }
+        .num-container .seconds {
+            position: absolute;
+            left: 50px;
+            top: 8px;
+        }
+        .num-container .num-dot label {
+            position: absolute;
+            left: 20%;
+            top: 1px;
+            font-size: 1.8rem;
+        }
+        .num-container .num-right{
+            position: absolute;
+            width: 20px;
+            height: 900px;
+            background-color: transparent;
+            left: 30px;
+            animation-name: example-counter;
+            animation-duration: 2s;
+            animation-iteration-count: 1;
+        }
+        .num-container .num-left .one,
+        .num-container .num-left .two,
+        .num-container .num-left .three,
+        .num-container .num-left .four,
+        .num-container .num-left .five,
+        .num-container .num-right .one,
+        .num-container .num-right .two,
+        .num-container .num-right .three,
+        .num-container .num-right .four,
+        .num-container .num-right .five,
+        .num-container .num-right .six,
+        .num-container .num-right .seven,
+        .num-container .num-right .eight,
+        .num-container .num-right .nine{
+            text-align: center;
+            font-size: 1.8rem;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="num-container">
+        <div class="num-left">
+            <div class="one">3</div>
+            <div class="two">2</div>
+            <div class="three">1</div>
+            <div class="four">0</div>
+        </div>    
+        <div class="num-dot">
+            <label for="">.</label>
+        </div>
+        <div class="num-right">
+            <div class="one">1</div>
+            <div class="two">2</div>
+            <div class="three">3</div>
+            <div class="four">4</div>
+            <div class="five">5</div>
+            <div class="six">6</div>
+            <div class="seven">7</div>
+            <div class="eight">8</div>
+            <div class="nine">9</div>
+        </div>
+        <div class="seconds">s</div>
+    </div>
+</body>
+</html>
