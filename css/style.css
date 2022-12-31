@@ -1,54 +1,34 @@
+/*----------------------------RESET AND INIT-----------------------------*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
 }
 
 .clr {
   clear: both;
 }
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  /* font-family: Arial, Helvetica, sans-serif; */
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   height: 300vh;
   color: white;
-  
 }
 
-a, button {
+a,
+button {
   cursor: pointer;
 }
+/*-------------------------------PAGE #1---------------------------------*/
 .container1 {
   position: relative;
   width: 100vw;
   height: 100vh;
   background: url(/img/model3_01.jpg) center center/cover;
-}
-
-button#buy:hover {
-  color: white;
-  background-color: black;
-}
-
-.container2 {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-  background: url(/img/model3_02.jpg) center center/cover;
-  
-}
-
-.container3 {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-  background: url(/img/model3_03.jpg) center center/cover;
-  
 }
 
 nav.navbar {
@@ -59,15 +39,19 @@ nav.navbar {
   background-color: transparent;
 }
 
+button#buy:hover {
+  color: white;
+  background-color: black;
+}
+
 .container1 .title {
-  position:absolute;
+  position: absolute;
   text-align: center;
   width: 300px;
   height: 100px;
   margin: 0 auto;
   top: 20vh;
   left: 40%;
-
 }
 
 .container1 .title a {
@@ -79,7 +63,7 @@ nav.navbar {
 }
 
 svg {
-margin: 20px;
+  margin: 20px;
 }
 
 ul.middle {
@@ -90,7 +74,7 @@ ul.middle {
   float: right;
 }
 
-  .navbar {
+.navbar {
   background: #333;
   color: #fff;
   overflow: auto;
@@ -115,7 +99,10 @@ ul.middle {
   margin-left: 10px;
 }
 
-.navbar ul, .first ul, .second ul, .third ul {
+.navbar ul,
+.first ul,
+.second ul,
+.third ul {
   list-style: none;
   float: right;
 }
@@ -124,28 +111,17 @@ ul.middle {
   float: left;
 }
 
-.navbar ul li a, .container1 .title a {
+.navbar ul li a,
+.container1 .title a {
   display: block;
   padding: 20px;
   text-align: center;
 }
 
-.navbar ul li a:hover, 
+.navbar ul li a:hover,
 .navbar ul li a.current {
   background: rgb(110, 107, 107, 0.4);
   color: white;
-}
-
-button.message {
-  border-radius: 50%;
-  right: 20px;
-  bottom: 50px;
-  position: fixed;
-  width: 50px;
-  height: 50px;
-  border: 3px solid black;
-  background-color: white;
-  z-index: 10;
 }
 
 .footer1 {
@@ -159,14 +135,17 @@ button.message {
   animation-duration: 3s;
   animation-iteration-count: 1;
 }
+
 .first {
   margin-right: 40px;
   float: left;
 }
+
 .second {
   margin-right: 40px;
   float: left;
 }
+
 .third {
   margin-right: 100px;
   float: left;
@@ -186,6 +165,8 @@ button.message {
   font-size: xx-large;
   font-weight: bold;
 }
+/*-------------------------------SIDE NAVBAR---------------------------------*/
+
 .side-navbar {
   position: absolute;
   top: 40vh;
@@ -193,20 +174,23 @@ button.message {
 }
 
 .side-navbar ul {
-  
   list-style: none;
 }
+
 .side-navbar ul li {
   font-size: 20px;
 }
+
 .side-navbar ul a.model-3 {
   color: transparent;
   text-decoration: none;
 }
+
 .side-navbar ul a.safety {
   color: transparent;
   text-decoration: none;
 }
+
 .side-navbar ul a.performance {
   color: transparent;
   text-decoration: none;
@@ -215,11 +199,20 @@ button.message {
 .side-navbar ul a.model-3:hover {
   color: white;
 }
+
 .side-navbar ul a.safety:hover {
   color: white;
 }
+
 .side-navbar ul a.performance:hover {
   color: white;
+}
+/*-------------------------------PAGE #2---------------------------------*/
+.container2 {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: url(/img/model3_02.jpg) center center/cover;
 }
 
 .main {
@@ -230,8 +223,8 @@ button.message {
   position: absolute;
   top: 20px;
   right: 30px;
-
 }
+
 .footer2 {
   color: black;
   width: 40vw;
@@ -240,7 +233,6 @@ button.message {
   position: absolute;
   bottom: 4vh;
   right: 10vw;
-  
 }
 
 .footer2 .btn2 {
@@ -252,6 +244,7 @@ button.message {
   padding: 15px 50px;
   float: right;
 }
+
 .footer2 .btn1 {
   font-size: larger;
   color: black;
@@ -261,6 +254,7 @@ button.message {
   padding: 15px 15px;
   float: left;
 }
+
 .footer2 .btn1_1 {
   font-size: larger;
   color: black;
@@ -279,17 +273,108 @@ button.message {
 }
 
 .btn1 {
-
   font-weight: bold;
   border-radius: 50%;
 }
+
 .btn1 a {
   text-decoration: none;
   color: black;
 }
 
+.info .up {
+  position: absolute;
+  width: 2px;
+  height: 200px;
+  background-color: #333;
+  left: 50%;
+  top: 4vh;
+  border-left: black;
+  border-width: 3px;
+  color: black;
+  text-decoration: none;
+  padding-left: 10px;
+  animation-name: example;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+.info .up ul li {
+  animation-name: example-ul;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+.info .left ul li {
+  animation-name: example-ul;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+.info .bottom ul li {
+  animation-name: example-ul;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+.info .left {
+  position: absolute;
+  width: 2px;
+  height: 200px;
+  background-color: #333;
+  left: 20%;
+  top: 40vh;
+  border-left: black;
+  border-width: 3px;
+  color: black;
+  text-decoration: none;
+  padding-left: 10px;
+  animation-name: example;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+.info .bottom {
+  position: absolute;
+  width: 2px;
+  height: 200px;
+  background-color: #333;
+  left: 50%;
+  top: 70vh;
+  border-left: black;
+  border-width: 3px;
+  color: black;
+  text-decoration: none;
+  padding-left: 10px;
+  animation-name: example;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+.info li {
+  list-style: none;
+  text-decoration: none;
+}
+
+.info .left {
+  position: absolute;
+  width: 5px;
+  height: 200px;
+  background-color: #333;
+}
+
+.info .bottom {
+  position: absolute;
+  width: 5px;
+  height: 200px;
+  background-color: #333;
+}
+/*-------------------------------PAGE #3---------------------------------*/
 .container3 {
   position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: url(/img/model3_03.jpg) center center/cover;
 }
 
 .container3 .main3 {
@@ -299,11 +384,9 @@ button.message {
   background-color: transparent;
   z-index: 3;
   top: 65vh;
-  
+
   bottom: 7vh;
   left: 25vw;
-}
-.container3 .main3 .amine {
 }
 
 .container3 .main3 .first {
@@ -312,12 +395,14 @@ button.message {
   margin-right: 40px;
   float: left;
 }
+
 .container3 .main3 .second {
   width: 10vw;
   text-align: center;
   margin-right: 40px;
   float: left;
 }
+
 .container3 .main3 .third {
   width: 10vw;
   text-align: center;
@@ -332,7 +417,6 @@ button.message {
   background-color: white;
   position: absolute;
   bottom: 0;
-
 }
 
 .footer3 .btn2 {
@@ -345,6 +429,7 @@ button.message {
   float: right;
   z-index: 5;
 }
+
 .footer3 .btn1 {
   font-size: larger;
   color: black;
@@ -364,6 +449,7 @@ button.message {
   float: left;
   border-style: none;
 }
+
 .left {
   float: left;
   padding-top: 40px;
@@ -389,115 +475,20 @@ button.message {
 .info {
   position: relative;
 }
+/*------------------------FIXED MESSAGE BUTTON---------------------------*/
 
-
-@keyframes example {
-  from {height: 0px; background-color: white;}
-  to {height: 200px; background-color: black;}
+button.message {
+  border-radius: 50%;
+  right: 20px;
+  bottom: 50px;
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  border: 3px solid black;
+  background-color: white;
+  z-index: 10;
 }
-@keyframes example-ul {
-  from {color: transparent;}
-  to {color: black;}
-}
-
-@keyframes example-movement {
-  from {height: 0vh;}
-  to {height: 7vh;}
-}
-
-.info .up {
-  position: absolute;
-  width: 2px;
-  height: 200px;
-  background-color: #333;
-  left: 50%;
-  top: 4vh;
-  border-left:black;
-  border-width: 3px;
-  color: black;
-  text-decoration: none;
-  padding-left: 10px;
-  animation-name: example;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-}
-
-.info .up ul li {
-  animation-name: example-ul;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-}
-.info .left ul li {
-  animation-name: example-ul;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-}
-.info .bottom ul li {
-  animation-name: example-ul;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-}
-.info .left {
-  position: absolute;
-  width: 2px;
-  height: 200px;
-  background-color: #333;
-  left: 20%;
-  top: 40vh;
-  border-left:black;
-  border-width: 3px;
-  color: black;
-  text-decoration: none;
-  padding-left: 10px;
-  animation-name: example;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-}
-.info .bottom {
-  position: absolute;
-  width: 2px;
-  height: 200px;
-  background-color: #333;
-  left: 50%;
-  top: 70vh;
-  border-left:black;
-  border-width: 3px;
-  color: black;
-  text-decoration: none;
-  padding-left: 10px;
-  animation-name: example;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-}
-.info li{
-  list-style: none;
-  text-decoration: none;
-}
-.info .left {
-  position: absolute;
-  width: 5px;
-  height: 200px;
-  background-color: #333;
-}
-.info .bottom {
-  position: absolute;
-  width: 5px;
-  height: 200px;
-  background-color: #333;
-}
-
-@keyframes example-speedometer{
-  0% {
-      transform: rotate(-90deg);
-  }
-  50% {
-      transform: rotate(0deg);
-  }
-  100% {
-      transform: rotate(90deg);
-  }
-}
-
+/*------------------------SPEEDOMETER ANIMATIONS-------------------------*/
 .tcl-badge-speedometer__dial {
   width: 50px;
   height: 50px;
@@ -506,72 +497,53 @@ button.message {
   top: 40vh; */
   z-index: 10;
 }
+
 .tcl-badge-speedometer__inner-circle-wrapper {
   width: 50px;
   height: 50px;
 }
+
 .tcl-badge-speedometer__needle {
   width: 20px;
   height: 20px;
 }
+
 .tcl-badge-speedometer__dial svg.tcl-badge-speedometer__outer-circle {
   fill: white;
   position: absolute;
   margin: 0 auto;
-  /* top: 10vh; */
 }
-.tcl-badge-speedometer__dial .tcl-badge-speedometer__inner-circle-wrapper svg.tcl-badge-speedometer__inner-circle {
+
+.tcl-badge-speedometer__dial
+.tcl-badge-speedometer__inner-circle-wrapper
+svg.tcl-badge-speedometer__inner-circle {
   fill: #7c7e85;
   position: absolute;
   margin: 0 auto;
-  /* top: 10vh; */
   opacity: 0.2;
-  
 }
+
 .tcl-badge-speedometer__dial svg.tcl-badge-speedometer__needle {
   fill: white;
   position: absolute;
   margin: 0 auto;
-  /* top: 11vh; */
   bottom: 20px;
   left: 15px;
   animation-name: example-speedometer;
   animation-duration: 6s;
   animation-iteration-count: infinite;
 }
-@keyframes example-text {
-  from {content: counter(num);}
-  to {content: counter(num);}
-}
-@property --num {
-  syntax: "<integer>";
-  initial-value: 0;
-  inherits: false;
-}
-.footer1 .first ul li.big {
-  transition: --num 0.25s;
-  counter-set: num var(--num);
-  animation-name: example-text;
-  /* animation-duration: 6s;
-  animation-iteration-count: infinite; */
-}
-
-@keyframes example-counter {
-  from {top: -400px;}
-  to {top: 0;}
-}
-
+/*------------------------NUMBER SPEED ANIMATIONS------------------------*/
 .num-container {
   position: relative;
   background-color: transparent;
-  width:60px;
+  width: 60px;
   height: 30px;
   top: 0;
   overflow: hidden;
-  
 }
 
-.num-container .num-left{
+.num-container .num-left {
   position: absolute;
   width: 20px;
   height: 400px;
@@ -580,9 +552,9 @@ button.message {
   animation-duration: 3s;
   animation-iteration-count: infinite;
 }
+
 .num-dot,
-.num-container .seconds
-{
+.num-container .seconds {
   position: absolute;
   top: 0;
   width: 10px;
@@ -593,12 +565,14 @@ button.message {
   font-size: 20px;
   text-align: center;
 }
+
 .num-container .seconds {
   position: absolute;
   left: 50px;
   top: 8px;
   color: white;
 }
+
 .num-container .num-dot label {
   position: absolute;
   left: 20%;
@@ -606,7 +580,8 @@ button.message {
   font-size: 1.8rem;
   color: white;
 }
-.num-container .num-right{
+
+.num-container .num-right {
   position: absolute;
   width: 20px;
   height: 900px;
@@ -616,6 +591,7 @@ button.message {
   animation-duration: 3s;
   animation-iteration-count: infinite;
 }
+
 .num-container .num-left .one,
 .num-container .num-left .two,
 .num-container .num-left .three,
@@ -629,23 +605,21 @@ button.message {
 .num-container .num-right .six,
 .num-container .num-right .seven,
 .num-container .num-right .eight,
-.num-container .num-right .nine{
+.num-container .num-right .nine {
   text-align: center;
   font-size: 1.8rem;
 }
-
+/*----------------------------------SCROLL DOWN ARROW---------------------*/
 .scroll {
   align-items: center;
   color: #fff;
-
   font-family: Montserrat, serif;
   position: fixed;
   bottom: 0;
   right: 50%;
-
 }
 
-.scroll .f-page{
+.scroll .f-page {
   color: rgb(238, 238, 238);
 }
 
@@ -655,28 +629,19 @@ button.message {
   transform: translateY(-10px);
 }
 
-@keyframes down{
-
-  0%{
-      transform: translateY(-10px);
-  }
-
-  20%{
-      transform: translateY(0);
-  }
-}
-
 .scroll a {
   text-decoration: none;
   color: white;
 }
+
+/*--------------------------TOOLTIP-------------------------------------*/
 .tooltip {
   position: relative;
   display: inline-block;
   border-bottom: 1px dotted black;
-  }
+}
 
-  .tooltip .tooltiptext {
+.tooltip .tooltiptext {
   visibility: hidden;
   width: 120px;
   background-color: black;
@@ -688,8 +653,78 @@ button.message {
   /* Position the tooltip */
   position: absolute;
   z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+/*------------------------ANIMATIONS SETTINGS----------------------------*/
+@keyframes example {
+  from {
+    height: 0px;
+    background-color: white;
+  }
+  to {
+    height: 200px;
+    background-color: black;
+  }
+}
+
+@keyframes example-ul {
+  from {
+    color: transparent;
+  }
+  to {
+    color: black;
+  }
+}
+
+@keyframes example-movement {
+  from {
+    height: 0vh;
+  }
+  to {
+    height: 7vh;
+  }
+}
+
+@keyframes example-speedometer {
+  0% {
+    transform: rotate(-90deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
+}
+
+@keyframes example-text {
+  from {
+    content: counter(num);
+  }
+  to {
+    content: counter(num);
+  }
+}
+
+@keyframes example-counter {
+  from {
+    top: -400px;
+  }
+  to {
+    top: 0;
+  }
+}
+
+@keyframes down {
+  0% {
+    transform: translateY(-10px);
   }
 
-  .tooltip:hover .tooltiptext {
-  visibility: visible;
+  20% {
+    transform: translateY(0);
   }
+}
+/*----------------------------------END-----------------------------------*/
