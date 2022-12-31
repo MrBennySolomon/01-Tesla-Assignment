@@ -384,6 +384,10 @@ button.message {
   from {height: 0px; background-color: white;}
   to {height: 200px; background-color: black;}
 }
+@keyframes example-ul {
+  from {color: transparent;}
+  to {color: black;}
+}
 
 .info .up {
   position: absolute;
@@ -398,6 +402,22 @@ button.message {
   text-decoration: none;
   padding-left: 10px;
   animation-name: example;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+.info .up ul li {
+  animation-name: example-ul;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+.info .left ul li {
+  animation-name: example-ul;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+.info .bottom ul li {
+  animation-name: example-ul;
   animation-duration: 3s;
   animation-iteration-count: infinite;
 }
