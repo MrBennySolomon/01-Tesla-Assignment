@@ -214,16 +214,12 @@ button.message {
 
 .side-navbar ul a.model-3:hover {
   color: white;
-  font-size: small;
-  
 }
 .side-navbar ul a.safety:hover {
   color: white;
-  font-size: small;
 }
 .side-navbar ul a.performance:hover {
   color: white;
-  font-size: small;
 }
 
 .main {
@@ -674,3 +670,26 @@ button.message {
   text-decoration: none;
   color: white;
 }
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+  }
+
+  .tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  }
+
+  .tooltip:hover .tooltiptext {
+  visibility: visible;
+  }

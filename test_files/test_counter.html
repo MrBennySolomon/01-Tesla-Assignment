@@ -14,8 +14,9 @@
         }
 
         .num-container {
+
             position: relative;
-            background-color: transparent;
+            background-color: #333;
             width:60px;
             height: 30px;
             top: 0;
@@ -24,13 +25,14 @@
         }
   
         .num-container .num-left{
+            color: white;
             position: absolute;
             width: 20px;
             height: 400px;
-            background-color: transparent;
+            background-color: orange;
             animation-name: example-counter;
             animation-duration: 3s;
-            animation-iteration-count: 1;
+            animation-iteration-count: infinite;
         }
         .num-dot,
         .num-container .seconds
@@ -41,7 +43,7 @@
             height: 30px;
             background-color: transparent;
             left: 20px;
-            color: black;
+            color: white;
             font-size: 20px;
             text-align: center;
         }
@@ -57,14 +59,15 @@
             font-size: 1.8rem;
         }
         .num-container .num-right{
+            color: white;
             position: absolute;
             width: 20px;
             height: 900px;
-            background-color: transparent;
+            background-color:blue;
             left: 30px;
             animation-name: example-counter;
             animation-duration: 2s;
-            animation-iteration-count: 1;
+            animation-iteration-count: infinite;
         }
         .num-container .num-left .one,
         .num-container .num-left .two,
