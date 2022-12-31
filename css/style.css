@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 
 .clr {
@@ -15,6 +16,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   height: 300vh;
   color: white;
+  
 }
 
 a, button {
@@ -303,14 +305,20 @@ button.message {
   left: 25vw;
 }
 .container3 .main3 .first {
+  width: 10vw;
+  text-align: center;
   margin-right: 40px;
   float: left;
 }
 .container3 .main3 .second {
+  width: 10vw;
+  text-align: center;
   margin-right: 40px;
   float: left;
 }
 .container3 .main3 .third {
+  width: 10vw;
+  text-align: center;
   margin-right: 100px;
   float: left;
 }
@@ -360,7 +368,9 @@ button.message {
   padding-left: 100px;
 }
 
-.right {
+.footer3 .right {
+  text-align: center;
+  width: 40vw;
   float: right;
   padding-right: 100px;
   padding-top: 40px;
@@ -397,7 +407,7 @@ button.message {
   text-decoration: none;
   padding-left: 10px;
   animation-name: example;
-  animation-duration: 4s;
+  animation-duration: 3s;
   animation-iteration-count: infinite;
 }
 .info .left {
@@ -413,7 +423,7 @@ button.message {
   text-decoration: none;
   padding-left: 10px;
   animation-name: example;
-  animation-duration: 4s;
+  animation-duration: 3s;
   animation-iteration-count: infinite;
 }
 .info .bottom {
@@ -428,9 +438,8 @@ button.message {
   color: black;
   text-decoration: none;
   padding-left: 10px;
-  /* padding-top: 120px; */
   animation-name: example;
-  animation-duration: 4s;
+  animation-duration: 3s;
   animation-iteration-count: infinite;
 }
 .info li{
