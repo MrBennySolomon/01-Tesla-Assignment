@@ -154,6 +154,9 @@ button.message {
   position: absolute;
   bottom: 4vh;
   left: 25vw;
+  animation-name: example-movement;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
 }
 .first {
   margin-right: 40px;
@@ -240,6 +243,7 @@ button.message {
   position: absolute;
   bottom: 4vh;
   right: 10vw;
+  
 }
 
 .footer2 .btn2 {
@@ -302,6 +306,9 @@ button.message {
   bottom: 7vh;
   left: 25vw;
 }
+.container3 .main3 .amine {
+}
+
 .container3 .main3 .first {
   width: 10vw;
   text-align: center;
@@ -394,6 +401,11 @@ button.message {
 @keyframes example-ul {
   from {color: transparent;}
   to {color: black;}
+}
+
+@keyframes example-movement {
+  from {height: 0vh;}
+  to {height: 7vh;}
 }
 
 .info .up {
@@ -624,3 +636,4 @@ button.message {
   text-align: center;
   font-size: 1.8rem;
 }
+
